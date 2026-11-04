@@ -1,0 +1,45 @@
+[project]
+name = "rl-tddn-contraction-order"
+version = "1.0.0"
+description = "Reinforcement-learned contraction ordering for tensor decision diagram networks (quantum circuit equivalence checking)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "networkx",
+    "qiskit>=1.3,<2",
+    "gymnasium",
+    "stable-baselines3",
+    "torch",
+    "torch-geometric",
+    "tensornetwork",
+    "cotengra",
+    "kahypar",
+    "optuna",
+    "cmaes",
+    "matplotlib",
+    "tensorboard",
+    "tqdm",
+    "rich",
+    "graphviz",
+    "ipython",
+]
+
+[project.optional-dependencies]
+verify = ["mqt.qcec"]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore:.*mini-batch size.*:UserWarning",
+    "ignore:rich is experimental:tqdm.TqdmExperimentalWarning",
+]

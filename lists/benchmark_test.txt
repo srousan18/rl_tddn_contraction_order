@@ -1,0 +1,12 @@
+data/circuits/benchmarks/combined/combined_dj_10q.qasm
+data/circuits/benchmarks/combined/combined_dj_19q.qasm
+data/circuits/benchmarks/combined/combined_dj_23q.qasm
+data/circuits/benchmarks/combined/combined_ghz_11q.qasm
+data/circuits/benchmarks/combined/combined_ghz_16q.qasm
+data/circuits/benchmarks/combined/combined_ghz_23q.qasm
+data/circuits/benchmarks/combined/combined_qnn_20q.qasm
+data/circuits/benchmarks/combined/combined_qnn_8q.qasm
+data/circuits/benchmarks/combined/combined_qnn_9q.qasm
+data/circuits/benchmarks/combined/combined_wstate_11q.qasm
+data/circuits/benchmarks/combined/combined_wstate_20q.qasm
+data/circuits/benchmarks/combined/combined_wstate_8q.qasm
